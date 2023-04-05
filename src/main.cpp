@@ -114,8 +114,7 @@ digitalWrite(LED_BUILTIN, HIGH);
 fHumidity = dht.getHumidity();
 fTemperature = dht.getTemperature();
 lux = lightMeter.readLightLevel();
-Serial.printf("Temperature: %.2f C, Humidity: %.2f %%, light: %.2f\n",
-fTemperature, fHumidity, lux);
+
 
 if (lux > 400)
 {
